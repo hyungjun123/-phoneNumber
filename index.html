@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+  
+    
+    <script>
+    
+    window.onload = function () {
+   
+    const pattern = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/
+    
+    document.getElementById("click2").onclick= function click(){
+    const input = document.getElementById("target");
+    if(true==pattern.test(input.value)) {
+    alert("good")
+    }
+    else{
+    alert("no")
+    }
+
+    }
+}
+    </script>    
+
+</head>
+<body>
+    
+<input  type="text" id="target" />
+<button id="click2" onclick="click">click</button>
+
+</body>
+</html>
